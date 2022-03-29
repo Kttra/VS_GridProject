@@ -59,6 +59,6 @@ The grid is indexed like a normal matrix or array in most programming languages 
 
 Comparing this array to the current rotation grid, we can see that "mission 1" is in the index 0, 0. The date "10/25/2021" is at index 2, 4.
 
-**Unused Buttons**
+**Unused Buttons and Plans**
 -----------------------------------
 The add and load button on the right side of the program currently have no function as I have not gotten around to adding it. As I said above, I plan to move this project over to C# instead. Currently, this project is left up in case it may help someone in the future whether it's with the indexing, using datagridview, or converting C++ strings to system strings. As this project was more of a personal project, it's not meant to be compatible with just any json file. However, the C# version I plan on making will have much better compatibility.
