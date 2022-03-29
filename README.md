@@ -1,5 +1,5 @@
 # Visual Studio GridProject
-A grid and json file project using C++ in visual studio. This program shows the use of grids to display information from a json file. This was created because I got tired of manually inputting information to an excel spreadsheet as the spreadsheet was getting really long. This program may not be completed because I plan to switch over to using C#.
+A grid and json file project using C++ in visual studio. This program shows the use of grids to display information from a json file. This was created because I got tired of manually inputting information to an excel spreadsheet as the spreadsheet was getting really long. This program will be redone using C#.
 
 **Layout**
 -----------------------------------
@@ -42,3 +42,23 @@ if (file.is_open()) {
 
 **Assigning a Cell Value**
 -----------------------------------
+First we want to get the string or value from the json file, then we want to convert it to a c string using the built in c_str() function. The function c_str() converts a C++ string into a C-style string which is essentially a null terminated array of bytes. After all this, we convert the c-style string into a system string. The reason for all this conversion is because cells can only take in a system string.
+
+```
+//In this example, we are going to take the 1st entry group time for mission 1
+string tempString = jsonObject["Mission 1"]["Group time"][0];
+auto cellValue = gcnew String(tempString.c_str());
+dataGridView1->Rows[0]->Cells[6]->Value = cellValue;
+```
+
+**Grid Indexing**
+-----------------------------------
+The grid is indexed like a normal matrix or array in most programming languages except we ignore the first row. The first row is considered to be the labels. Below is a picture detailing each index by row x column.
+
+![image](https://user-images.githubusercontent.com/100814612/160515166-a19c4abf-2b34-44ce-86a9-121bbfef6bb6.png)
+
+Comparing this array to the current rotation grid, we can see that "mission 1" is in the index 0, 0. The date "10/25/2021" is at index 2, 4.
+
+**Unused Buttons**
+-----------------------------------
+The add and load button on the right side of the program currently have no function as I have not gotten around to adding it. As I said above, I plan to move this project over to C# instead. Currently, this project is left up in case it may help someone in the future whether it's with the indexing, using datagridview, or converting C++ strings to system strings. As this project was more of a personal project, it's not meant to be compatible with just any json file. However, the C# version I plan on making will have much better compatibility.
