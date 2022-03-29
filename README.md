@@ -55,7 +55,7 @@ dataGridView1->Rows[0]->Cells[6]->Value = cellValue;
 -----------------------------------
 The grid is indexed like a normal matrix or array in most programming languages except we ignore the first row. The first row is considered to be the labels. Below is a picture detailing each index by row x column.
 
-![image](https://user-images.githubusercontent.com/100814612/160515166-a19c4abf-2b34-44ce-86a9-121bbfef6bb6.png)
+![Untitled-1](https://user-images.githubusercontent.com/100814612/160525207-6e15290a-f809-4efc-9c2a-ce80b3652f0e.png)
 
 Comparing this array to the current rotation grid, we can see that "mission 1" is in the index 0, 0. The date "10/25/2021" is at index 2, 4.
 
