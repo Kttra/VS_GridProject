@@ -1,5 +1,5 @@
 # Visual Studio GridProject
-A grid and json file project using C++ in visual studio. This program shows the use of grids to display information from a json file. This was created because I got tired of manually inputting information to an excel spreadsheet as the spreadsheet was getting really long. This program will be redone using C#.
+A grid and json file project using C++ in visual studio. This program shows the use of grids to display information from a json file. This was created because I got tired of manually inputting information to an excel spreadsheet as the spreadsheet was getting really long. This program will be redone using C#. The C# version is now out [here](https://github.com/Kttra/JsonGridLoader).
 
 **Layout**
 -----------------------------------
@@ -61,4 +61,4 @@ Comparing this array to the current rotation grid, we can see that "mission 1" i
 
 **Unfinished Features and Future Plans**
 -----------------------------------
-The add and load button on the right side of the program currently have no function as I have not gotten around to adding it. As I said above, I plan to move this project over to C# instead. Currently, this project is left up in case it may help someone in the future whether it's with the indexing, using datagridview, or converting C++ strings to system strings. As this project was more of a personal project, it's not meant to be compatible with just any json file. However, the C# version I plan on making will have much better compatibility. The C# version is now out [here](https://github.com/Kttra/JsonGridLoader).
+The add and load button on the right side of the program currently have no function as I have not gotten around to adding it. As I said above, I plan to move this project over to C# instead. Currently, this project is left up in case it may help someone in the future whether it's with the indexing, using datagridview, or converting C++ strings to system strings. As this project was more of a personal project, it's not meant to be compatible with just any json file. However, the C# version I plan on making will have much better compatibility.
