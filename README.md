@@ -9,7 +9,7 @@ My json file was formatted in a way to keep entries of times, teams, dates, and 
 
 An entry in the json file for the first mission is displayed below. Here we see an array for each category I wanted to keep track of. The first value of each entry indicates that it is the 1st run. The second value of each array is part of the second run and so on.
 
-```
+```json
 "Mission 1": {
     "1st solo": [ "4:10", "2:20", "2:12", "2:47", "1:42", "1:41", "1:38", "2:04", "2:07" ],
     "20th solo": [ "6:16", "4:40", "4:18", "4:16", "3:52", "3:49", "3:36", "4:35", "4:17" ],
@@ -29,7 +29,7 @@ An entry in the json file for the first mission is displayed below. Here we see 
 
 **Loading a Json File**
 -----------------------------------
-```
+```cpp
 //Opening json file
 std::ifstream file;
 file.open("sample.json");
@@ -44,7 +44,7 @@ if (file.is_open()) {
 -----------------------------------
 First we want to get the string or value from the json file, then we want to convert it to a c string using the built in c_str() function. The function c_str() converts a C++ string into a C-style string which is essentially a null terminated array of bytes. After all this, we convert the c-style string into a system string. The reason for all this conversion is because cells can only take in a system string.
 
-```
+```cpp
 //In this example, we are going to take the 1st entry group time for mission 1
 string tempString = jsonObject["Mission 1"]["Group time"][0];
 auto cellValue = gcnew String(tempString.c_str());
