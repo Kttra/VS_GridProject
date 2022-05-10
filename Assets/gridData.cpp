@@ -1,6 +1,6 @@
 /*  The below code is taken from https://skanky.dev/visualcpp/datagridview/buttons-in-a-datagridview
-    I recommending checking out his website as it really helped me as I was working working
-    my grid project.
+    I recommend checking out his website as it contains very useful information on visual studio
+    winforms and C++ in general.
 */
 
 //Programmatically creating DataGridView with customised items in each cell
